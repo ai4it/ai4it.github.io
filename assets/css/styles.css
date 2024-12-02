@@ -3933,6 +3933,8 @@ input[type=button].btn-block {
 .nav-fill .nav-item {
   flex: 1 1 auto;
   text-align: center;
+  display: flex;
+  align-items: center; 
 }
 
 .nav-justified > .nav-link,
@@ -3940,6 +3942,8 @@ input[type=button].btn-block {
   flex-basis: 0;
   flex-grow: 1;
   text-align: center;
+  display: flex;
+  align-items: center; 
 }
 
 .tab-content > .tab-pane {
