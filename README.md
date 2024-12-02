@@ -1,4 +1,3 @@
-readme
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="navlogo">
             <div class="buttonstyle">

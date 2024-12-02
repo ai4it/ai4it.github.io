@@ -97,6 +97,7 @@
             margin-bottom: 2px; /* 下边距 */
         }
         .div-background {
+            min-height: 100vh;
             margin:0px;
             background: url('assets/img/ICME2025.jpg') no-repeat;
             background-size: cover !important; 
@@ -199,6 +200,15 @@
             }
         }
         @media (max-width: 1024px){
+            .div-background {
+                min-height: 0vh;
+                margin:0px;
+                background: url('assets/img/ICME2025.jpg') no-repeat;
+                background-size: cover !important; 
+                background-position: center 50% !important;
+                
+            }
+
             #logo-nav-bar{
                 height: 6rem;
                 width: 10rem;
@@ -332,7 +342,7 @@
         </div>
     </nav>
     <!-- Masthead -->
-    <header style="background-color: #ffffff !important;width: 100vw; min-height: 100vh;" class="masthead bg-primary text-white text-center div-background">
+    <header style="background-color: #ffffff !important;width: 100vw;" class="masthead bg-primary text-white text-center div-background">
         <div style="margin-top: 0px;" class="container d-flex align-items-center flex-column">
             <!-- Masthead Heading -->
              
