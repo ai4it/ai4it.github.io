@@ -35,16 +35,15 @@
                 element.style.display='flex'
             }
         }
-        // 监听滚动，同步调整提示条top值
-    window.addEventListener('scroll', function() {
-        const nav = document.getElementById('mainNav');
-        const bar = document.getElementById('pastSessionBar');
-        if (nav.classList.contains('navbar-shrink')) {
-        bar.style.top = '60px'; // 导航栏收缩后，提示条上移（数值根据实际调整）
-        } else {
-        bar.style.top = '70px'; // 导航栏未收缩时的初始位置
-        }
-    });
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('mainNav');
+            const bar = document.getElementById('pastSessionBar');
+            if (nav.classList.contains('navbar-shrink')) {
+            bar.style.top = '100px'; // 导航栏收缩后，提示条上移（数值根据实际调整）
+            } else {
+            bar.style.top = '120px'; // 导航栏未收缩时的初始位置
+            }
+        });
         // 监听窗口大小变化事件
         window.addEventListener('resize', toggleElementBasedOnWidth);
         document.addEventListener('DOMContentLoaded', toggleElementBasedOnWidth);
@@ -108,9 +107,9 @@
         .div-background {
             min-height: 100vh;
             margin:0px;
-            background: url('assets/img26/ICME26.png') no-repeat;
+            background: url('assets/img/ICME2025.jpg') no-repeat;
             background-size: cover !important; 
-            background-position: center 65% !important;
+            background-position: center 50% !important;
             
         }
         .ICIP_logo{
@@ -174,8 +173,8 @@
         } */
         @media (min-width: 576px){
             #logo-nav-bar{
-                height: 3rem;
-                width: 12rem;
+                height: 6rem;
+                width: 10rem;
                 margin-left: 4rem;
               
             }
@@ -190,20 +189,20 @@
                 max-width: 50%;
             }
             #logo-nav-bar{
-                height: 3rem;
-                width: 12rem;
+                height: 6rem;
+                width: 10rem;
                 margin-left: 2rem;
               
             }
         }
         @media (min-width: 1024px){
             .col-sm-3{
-                flex: 0 0 33%;
-                max-width: 33%;
+                flex: 0 0 20%;
+                max-width: 20%;
             }
             #logo-nav-bar{
-                height: 3rem;
-                width: 12rem;
+                height: 6rem;
+                width: 10rem;
                 margin-left: 1rem;
               
             }
@@ -212,15 +211,15 @@
             .div-background {
                 min-height: 0vh;
                 margin:0px;
-                background: url('assets/img26/ICME26.png') no-repeat;
+                background: url('assets/img/ICME2025.jpg') no-repeat;
                 background-size: cover !important; 
-                background-position: center 65% !important;
+                background-position: center 50% !important;
                 
             }
 
             #logo-nav-bar{
-                height: 3rem;
-                width: 12rem;
+                height: 6rem;
+                width: 10rem;
             }
             .navlogo{
                 display: grid; 
@@ -318,8 +317,9 @@
             <div>
                 <div class="image-container">
                     <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                        <img id="logo-nav-bar" src="assets/img26/3.png" alt=""></a>
+                        <img id="logo-nav-bar" src="assets/img/logo/ICME.jpg" alt=""></a>
                 </div>
+                
             </div>
         </div>
         <div class="container">
@@ -347,11 +347,8 @@
                     </li>
                 </ul>
             </div>
-            
         </div>
-        
     </nav>
-    <!-- 新增：适配导航栏收缩的往届提示条 -->
     <div id="pastSessionBar" style="
         background-color: #FFD100; 
         color: #002B5C; 
@@ -360,42 +357,43 @@
         font-weight: bold;
         width: 100%;
         position: fixed; /* 固定在顶部，和导航栏联动 */
-        top: 70px; /* 初始适配导航栏未收缩的高度 */
+        top: 120px; /* 初始适配导航栏未收缩的高度 */
         z-index: 99;
         transition: top 0.3s ease; /* 跟随导航栏平滑变化 */
         ">
-    <span>We also hosted this special session in 2025! </span>
-    <a href="2025.html" style="color: #002B5C; text-decoration: underline; font-weight: bold;">View 2025 Session</a>
+    <span>We are currently holding the 2026 special session!</span>
+    <a href="index.html" style="color: #002B5C; text-decoration: underline; font-weight: bold;">View 2026 Session</a>
     </div>
     <!-- Masthead -->
     <header style="background-color: #ffffff !important;width: 100vw;" class="masthead bg-primary text-white text-center div-background">
         <div style="margin-top: 0px;" class="container d-flex align-items-center flex-column">
             <!-- Masthead Heading -->
              
-            <h1 class="masthead-heading mb-0">ICME 2026 Special Session</h1>
+            <h1 class="masthead-heading mb-0">ICME 2025 Special Session</h1>
             <br/>
             <br/>
             <!-- Masthead Subheading -->
             <h1 class="masthead-subheading mb-0">
-                Event-Driven and Multimodal Perception in Low-Altitude, Waterborne, and Ground Transportation
+                AI4IT: Multimodal Content Analysis, Understanding, and Generation for Intelligent Transportation
                 <br/>
             </h1>
             <br/>
             <br/>
             <h1 class="masthead-subheading mb-0">
-                Bangkok, Thailand | 5 - 9 July, 2026
+                Nantes, France | June 30 - July 4, 2025
             </h1>
         </div>
     </header>
+
     <section class="page-section portfolio bg-light" id="SessionAbstract">
         <div class="container">
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Session Abstract</h2>
             <p class="lead text-justify">
-                This special session focuses on event driven and multimodal perception in low altitude, land and waterborne transportation. Modern transportation environments contain fast motion, changing illumination, adverse weather, degraded image quality and strict latency and energy requirements. These challenges make robust multimedia perception a key requirement for safe and reliable systems.
+                Multimodal content understanding and analysis are essential for advancing intelligent transportation systems by integrating diverse data sources such as images, videos, text, audio, and sensor inputs. These capabilities enhance safety, efficiency, and decision-making processes. However, the complexity of modern transportation ecosystems introduces significant challenges, including the alignment of disparate data streams, accurate content interpretation, and privacy concerns.
                 
-                New sensing modalities such as event cameras, spike cameras, infrared imaging, polarization imaging, hyperspectral imaging and radar vision fusion offer higher temporal resolution and better environmental adaptability. At the same time, advances in multimedia understanding including representation learning, video analysis, generative modeling and vision language models are improving perception under complex and low quality conditions.
+                Key applications such as analyzing driver behavior through visual and audio cues, detecting traffic anomalies using sensor and video data, and correlating textual traffic reports with real-time images demand innovative multimodal learning approaches.
                 
-                The session aims to bring together research on visual and multimodal perception for all transportation scenarios and welcomes work on any single modality or multimodal fusion that improves multimedia understanding in realistic and challenging environments.
+                This special session seeks to provide a platform for inspiring new research directions and exploring practical applications of multimodal analysis in intelligent transportation. By bridging diverse disciplines, this session aims to shape the future of multimodal research and accelerate real-world implementation in transportation systems.
                 <br/>
             </p>
         </div>
@@ -412,25 +410,20 @@
             <p class="lead text-justify">
                
                 
-                The Special Session on <strong> Event Driven and Multimodal Perception in Low Altitude, Waterborne and Ground Transportation </strong> invites original research papers that advance multimedia sensing and understanding in real world transportation environments. Submissions should focus on visual or multimodal perception for aerial, land based or maritime scenarios, including both single modality methods and multimodal fusion.
-                Accepted papers will be included in ICME 2026 and presented in the special session. Researchers from multimedia, computer vision and intelligent transportation communities are encouraged to submit.
-                <h3>Topics of interest include (but are not limited to): </h3>
+                We invite original research papers for the ICME 2025 Special Session on <strong>AI4IT: Multimodal Content Analysis, Understanding, and Generation for Intelligent Transportation</strong>. This session focuses on addressing the challenges and opportunities in leveraging diverse data sources—such as images, videos, text, audio, and sensor inputs—for enhancing intelligent transportation systems.
+            
+                <h3>Topics of Interest</h3>
                 <ol class="lead">
                     <ul>
-                        <li>Multimedia perception for low-altitude, land, and waterborne transportation</li>
-                        <li>RGB-based, neuromorphic-based, IR/thermal, polarization, or hyperspectral visual analysis</li>
-                        <li>New imaging modalities and multimedia sensing technologies for transportation</li> 
-                        <li>Visual scene reconstruction and environmental modeling in low-altitude, land, and waterborne environments using traditional or emerging visual sensing modalities</li>
-                        <li>Robust multimedia understanding under degradation, noise, or adverse conditions</li>
-                        <li>Representation learning, domain generalization, and cross-view or cross-modal alignment</li>
-                        <li>Video content understanding and high-speed perception for safety-critical tasks</li>
-                        <li>Multimedia-based behavior, intention, or anomaly understanding</li>
-                        <li>Multimedia datasets, benchmarks, and real-world deployments</li>
-                        <li>Generative models for enhancement, reconstruction, simulation, and content synthesis</li>
-                        <li>Foundation models and vision-language models for transportation multimedia</li>
-                        <li>Multimedia perception for autonomous and embodied agents across air, land, and water</li>
-                        <li>Safety, robustness, privacy, and security in multimedia-driven transportation systems</li>
-                        <li>Applications in low-altitude logistics, smart highways, ports, inland waterways, and cross-domain traffic</li>
+                        <li>Multimodal learning frameworks for intelligent transportation systems</li>
+                        <li>Multimodal fusion techniques for enhanced traffic understanding</li>
+                        <li>Generative models for multimodal content generation and alignment</li> 
+                        <li>Multimodal content retrieval and recommendation in transportation contexts</li>
+                        <li>Privacy and security concerns in multimodal data usage</li>
+                        <li>Cross-modal emotion and behavior analysis for driver and passenger safety</li>
+                        <li>Real-world multimodal datasets for intelligent transportation</li>
+                        <li>Explainable and interpretable multimodal models for transportation applications</li>
+                        <li>Ethical and policy-related considerations for multimodal data in transportation</li>
                     </ul>
                 </ol>
         </div>
@@ -459,7 +452,7 @@
             <ul class="lead">
                 <li>Papers must be no longer than 6 pages, including all text, figures, and references.</li>
                 <li>The abstract should be about 100-150 words.</li>
-                <li>You can obtain more detailed information through this <a href="https://2026.ieeeicme.org/author-information-and-submission-instructions/" target="_blank">link</a>.</li>
+                <li>You can obtain more detailed information through this <a href="https://2025.ieeeicme.org/author-information-and-submission-instructions/" target="_blank">link</a>.</li>
             </ul>
         </div>
     </section>
@@ -472,9 +465,11 @@
             
             <br>
             <ul class="lead text-justify">
-                <li>Paper Submission Deadline: <strong>December 12, 2025</strong></li>
-                <li>Author Rebuttal period: <strong>February 22 - 26 ,2026</strong></li>
-                <li>Acceptance notification: <strong>March 16, 2026</strong></li>
+                <del><li>Paper Submission Deadline: <strong>December 13, 2024</strong></li></del>
+                <br>
+                <li>Paper Submission Deadline: <strong>December 23, 2024</strong></li>
+                <br>
+                <li>Acceptance notification: <strong>March 14, 2025</strong></li>
                 <br>
             </ul>
         </div>
@@ -490,7 +485,7 @@
             <div class="row mt-5">
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar1" src="assets/img26/team/zhongxian.jpg" alt="">
+                        <img class="mx-auto rounded-circle avatar1" src="assets/img/team/zhongxian.jpg" alt="">
                         <h4>Xian Zhong</h4>
                         <p class="text-secondary">Wuhan University of Technology</br>
                             Professor</br>
@@ -507,51 +502,17 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar4" src="assets/img26/team/liuwenxaun.jpg" alt="">
-                        <h4>Wenxuan Liu</h4>
-                        <p class="text-secondary">Peking University</br>
-                            Researcher</br>
-                        </p>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href=""
-                            target="_blank">
-                            <i class="fas fa-home"></i>
-                        </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:liuwx66@pku.edu.cn"
-                            target="_blank">
-                            <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar3" src="assets/img26/team/yuzhaofei.jpg" alt="">
-                        <h4>Zhaofei Yu</h4>
-                        <p class="text-secondary">Peking University</br>
-                            Assistant Professor</br>
-                        </p>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href=""
-                            target="_blank">
-                            <i class="fas fa-home"></i>
-                        </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:yuzf12@pku.edu.cn"
-                            target="_blank">
-                            <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar3" src="assets/img26/team/liuwen.jpg" alt="">
-                        <h4>Ryan Wen Liu</h4>
-                        <p class="text-secondary">Wuhan University of Technology</br>
-                            Professor</br>
+                        <img  class="mx-auto rounded-circle avatar2" src="assets/img/team/wenxin.jpg" alt="">
+                        <h4>Wenxin Huang</h4>
+                        <p class="text-secondary">Hubei University</br>
+                            Associate Professor</br>
                         </br>
                         </p>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href=""
+                        <a class="btn btn-outline-secondary btn-social mx-1" href="https://scholar.google.com.hk/citations?user=TY2PC4CgIwkC"
                             target="_blank">
                             <i class="fas fa-home"></i>
                         </a>
-                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:wenliu@whut.edu.cn"
+                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:wenxinhuang161@gmail.com"
                             target="_blank">
                             <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
                         </a>
@@ -559,7 +520,26 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar3" src="assets/img26/team/wangzheng.jpg" alt="">
+                        <img class="mx-auto rounded-circle avatar4" src="assets/img/team/yinyifang.jpg" alt="">
+                        <h4>Yifang Yin</h4>
+                        <p class="text-secondary">I2R, A*STAR</br>
+                            Senior Scientist</br>
+                        </br>
+                            
+                        </p>
+                        <a class="btn btn-outline-secondary btn-social mx-1" href="https://yifangyin.github.io/"
+                            target="_blank">
+                            <i class="fas fa-home"></i>
+                        </a>
+                        <a class="btn btn-outline-secondary btn-social mx-1" href="mailto:yin_yifang@i2r.a-star.edu.sg"
+                            target="_blank">
+                            <svg t="1681180803353" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3223" width="200" height="200"><path d="M128 768V301.248l361.344 361.376a32.032 32.032 0 0 0 45.312 0L896 301.248V768H128z m384-173.248L173.248 256h677.504L512 594.752zM64 832h896V192H64v640z" fill="#2C3E50" p-id="3224"></path></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="team-member">
+                        <img class="mx-auto rounded-circle avatar3" src="assets/img/team/wangz.jpg" alt="">
                         <h4>Zheng Wang</h4>
                         <p class="text-secondary">Wuhan University</br>
                             Professor</br>
@@ -577,7 +557,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="team-member">
-                        <img class="mx-auto rounded-circle avatar5" src="assets/img26/team/chiawen.jpg" alt="">
+                        <img class="mx-auto rounded-circle avatar5" src="assets/img/team/chiawen.jpg" alt="">
                         <h4>Chia-wen Lin</h4>
                         <p class="text-secondary">National Tsing Hua University</br>
                             Professor</br>
